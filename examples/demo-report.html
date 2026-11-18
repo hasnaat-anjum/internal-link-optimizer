@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Internal Link Report — examples/demo-site</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+         max-width: 960px; margin: 2rem auto; padding: 0 1rem; color: #1f2937; }
+  h1 { font-size: 1.6rem; } h2 { margin-top: 2rem; border-bottom: 2px solid #e5e7eb;
+         padding-bottom: .3rem; }
+  .cards { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1rem 0; }
+  .card { border: 1px solid #e5e7eb; border-radius: .5rem; padding: .75rem 1rem;
+          min-width: 120px; background: #f9fafb; }
+  .card b { font-size: 1.5rem; display: block; }
+  .grade { font-size: 2.2rem; font-weight: 800; }
+  .good { color: #047857; } .warn { color: #b45309; } .bad { color: #b91c1c; }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+  th, td { border: 1px solid #e5e7eb; padding: .45rem .6rem; text-align: left;
+            vertical-align: top; word-break: break-word; }
+  th { background: #f3f4f6; }
+  .muted { color: #6b7280; font-size: .85rem; }
+  code { background: #f3f4f6; padding: 0 .25rem; border-radius: .25rem; }
+</style>
+</head>
+<body>
+<h1>Internal Link Report</h1>
+<p class="muted">Site: <code>examples/demo-site</code> &nbsp;•&nbsp;
+Generated: 2026-11-18T05:55:26.099873+00:00 &nbsp;•&nbsp;
+Source: local-folder</p>
+<p>Health score: <span class="grade bad">29/100
+(grade F)</span></p>
+<div class="cards">
+  <div class="card"><b>6</b>pages crawled</div>
+  <div class="card"><b>5</b>content links</div>
+  <div class="card"><b>0.83</b>avg inbound / page</div>
+  <div class="card"><b>1</b>orphan pages</div>
+  <div class="card"><b>1</b>weakly linked</div>
+  <div class="card"><b>2</b>dead-end pages</div>
+  <div class="card"><b>1</b>pages w/ broken links</div>
+  <div class="card"><b>15</b>suggestions</div>
+</div>
+
+<h2>Orphan pages (1)</h2>
+<p class="muted">Live pages no other page links to — link to these first.</p>
+<table><tr><th>URL</th><th>Title</th></tr><tr><td>http://local/wholesale.html</td><td>Wholesale Coffee for Cafes &amp; Offices | Acme Coffee</td></tr></table>
+
+<h2>Weakly linked pages (1)</h2>
+<p class="muted">Reachable only from the navigation or footer — no article links to them. Add a content link from a related page.</p>
+<table><tr><th>URL</th><th>Title</th></tr><tr><td>http://local/about.html</td><td>About Acme Coffee Roasters | Acme Coffee</td></tr></table>
+
+<h2>Broken internal links (1 pages)</h2>
+<table><tr><th>Source page</th><th>Broken target(s)</th></tr><tr><td>http://local/subscriptions.html</td><td>http://local/missing-page.html</td></tr></table>
+
+<h2>Link suggestions (15)</h2>
+<p class="muted">Add these links — anchor text is taken from real sentences on the source page.</p>
+<table><tr><th>Source page</th><th>Link to</th><th>Score</th><th>Anchor text</th><th>Why</th></tr><tr><td>http://local/</td><td>http://local/subscriptions.html</td><td>0.273</td><td>coffee subscription</td><td>Closely related — both pages cover &#x27;coffee, beans, fresh&#x27; — but this page never links to it.</td></tr>
+<tr><td>http://local/subscriptions.html</td><td>http://local/</td><td>0.273</td><td>coffee</td><td>Closely related — both pages cover &#x27;coffee&#x27; — but this page never links to it.</td></tr>
+<tr><td>http://local/</td><td>http://local/brewing-guide.html</td><td>0.259</td><td>brewing guide</td><td>Closely related — both pages cover &#x27;brewing, coffee, guide&#x27; — but this page never links to it.</td></tr>
+<tr><td>http://local/brewing-guide.html</td><td>http://local/</td><td>0.259</td><td>Good coffee</td><td>Closely related — both pages cover &#x27;coffee&#x27; — but this page never links to it.</td></tr>
+<tr><td>http://local/</td><td>http://local/wholesale.html</td><td>0.235</td><td>brewing</td><td>Orphan page — nothing links to it yet. Shares the topic &#x27;coffee, acme&#x27; with this page.</td></tr>
+<tr><td>http://local/brewing-guide.html</td><td>http://local/wholesale.html</td><td>0.191</td><td>Good coffee</td><td>Orphan page — nothing links to it yet. Shares the topic &#x27;coffee&#x27; with this page.</td></tr>
+<tr><td>http://local/beans.html</td><td>http://local/subscriptions.html</td><td>0.19</td><td>green coffee</td><td>Closely related — both pages cover &#x27;coffee, beans&#x27; — but this page never links to it.</td></tr>
+<tr><td>http://local/beans.html</td><td>http://local/</td><td>0.181</td><td>Prefer coffee</td><td>Closely related — both pages cover &#x27;coffee, small&#x27; — but this page never links to it.</td></tr>
+<tr><td>http://local/subscriptions.html</td><td>http://local/wholesale.html</td><td>0.16</td><td>Colombian beans</td><td>Orphan page — nothing links to it yet. Shares the topic &#x27;coffee&#x27; with this page.</td></tr>
+<tr><td>http://local/wholesale.html</td><td>http://local/</td><td>0.157</td><td>coffee beans</td><td>Closely related — both pages cover &#x27;coffee&#x27; — but this page never links to it.</td></tr>
+<tr><td>http://local/beans.html</td><td>http://local/wholesale.html</td><td>0.152</td><td>green coffee</td><td>Orphan page — nothing links to it yet. Shares the topic &#x27;coffee&#x27; with this page.</td></tr>
+<tr><td>http://local/about.html</td><td>http://local/</td><td>0.145</td><td>Coffee Roasters</td><td>Closely related — both pages cover &#x27;coffee, acme, roasters&#x27; — but this page never links to it.</td></tr>
+<tr><td>http://local/wholesale.html</td><td>http://local/brewing-guide.html</td><td>0.127</td><td>coffee beans</td><td>Closely related — both pages cover &#x27;brewing, coffee, beans&#x27; — but this page never links to it.</td></tr>
+<tr><td>http://local/wholesale.html</td><td>http://local/subscriptions.html</td><td>0.107</td><td>coffee beans</td><td>Closely related — both pages cover &#x27;coffee, beans, fresh&#x27; — but this page never links to it.</td></tr>
+<tr><td>http://local/about.html</td><td>http://local/beans.html</td><td>0.083</td><td>Acme Coffee</td><td>Closely related — both pages cover &#x27;coffee&#x27; — but this page never links to it.</td></tr></table>
+
+<h2>Top pages by internal authority</h2>
+<p class="muted">Where your link equity actually flows (internal PageRank).</p>
+<table><tr><th>URL</th><th>Authority</th></tr><tr><td>http://local/brewing-guide.html</td><td>0.3763</td></tr>
+<tr><td>http://local/beans.html</td><td>0.28986</td></tr>
+<tr><td>http://local/subscriptions.html</td><td>0.20341</td></tr>
+<tr><td>http://local/</td><td>0.04348</td></tr>
+<tr><td>http://local/about.html</td><td>0.04348</td></tr>
+<tr><td>http://local/wholesale.html</td><td>0.04348</td></tr></table>
+
+<p class="muted">Generated by <a href="https://github.com/hasnaat-anjum/internal-link-optimizer">Internal Link Optimizer</a> — free, open source, no API key needed.</p>
+</body>
+</html>

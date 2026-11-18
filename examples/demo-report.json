@@ -1,0 +1,216 @@
+{
+  "tool": "internal-link-optimizer",
+  "version": "1.0.0",
+  "generated_at": "2026-11-18T05:55:26.099873+00:00",
+  "site": "examples/demo-site",
+  "source": "local-folder",
+  "summary": {
+    "pages_crawled": 6,
+    "content_links": 5,
+    "avg_inbound_links": 0.83,
+    "orphan_pages": 1,
+    "weakly_linked_pages": 1,
+    "dead_end_pages": 2,
+    "pages_with_broken_links": 1,
+    "suggestions": 15,
+    "health_score": 29,
+    "health_grade": "F"
+  },
+  "orphan_pages": [
+    "http://local/wholesale.html"
+  ],
+  "weakly_linked_pages": [
+    "http://local/about.html"
+  ],
+  "dead_end_pages": [
+    "http://local/about.html",
+    "http://local/wholesale.html"
+  ],
+  "broken_links": {
+    "http://local/subscriptions.html": [
+      "http://local/missing-page.html"
+    ]
+  },
+  "fetch_errors": {},
+  "skipped_robots": {},
+  "authority": {
+    "http://local/brewing-guide.html": 0.3763,
+    "http://local/beans.html": 0.28986,
+    "http://local/subscriptions.html": 0.20341,
+    "http://local/": 0.04348,
+    "http://local/about.html": 0.04348,
+    "http://local/wholesale.html": 0.04348
+  },
+  "pages": {
+    "http://local/": {
+      "title": "Acme Coffee Roasters — Small-batch coffee, roasted weekly",
+      "h1": "Acme Coffee Roasters",
+      "word_count": 84,
+      "inbound_links": 0,
+      "outbound_content_links": 0,
+      "status": 200
+    },
+    "http://local/about.html": {
+      "title": "About Acme Coffee Roasters | Acme Coffee",
+      "h1": "About Us",
+      "word_count": 37,
+      "inbound_links": 0,
+      "outbound_content_links": 0,
+      "status": 200
+    },
+    "http://local/beans.html": {
+      "title": "Our Coffee Beans — Ethiopian, Colombian & Decaf | Acme Coffee",
+      "h1": "Our Coffee Beans",
+      "word_count": 115,
+      "inbound_links": 2,
+      "outbound_content_links": 1,
+      "status": 200
+    },
+    "http://local/brewing-guide.html": {
+      "title": "Brewing Guide — Pour Over, French Press & Cold Brew | Acme Coffee",
+      "h1": "Brewing Guide",
+      "word_count": 138,
+      "inbound_links": 2,
+      "outbound_content_links": 2,
+      "status": 200
+    },
+    "http://local/subscriptions.html": {
+      "title": "Coffee Subscriptions — Fresh Beans Delivered Monthly | Acme Coffee",
+      "h1": "Coffee Subscriptions",
+      "word_count": 136,
+      "inbound_links": 1,
+      "outbound_content_links": 3,
+      "status": 200
+    },
+    "http://local/wholesale.html": {
+      "title": "Wholesale Coffee for Cafes & Offices | Acme Coffee",
+      "h1": "Wholesale Coffee",
+      "word_count": 87,
+      "inbound_links": 0,
+      "outbound_content_links": 0,
+      "status": 200
+    }
+  },
+  "suggestions": [
+    {
+      "source_url": "http://local/",
+      "target_url": "http://local/subscriptions.html",
+      "score": 0.273,
+      "anchor": "coffee subscription",
+      "sentence": "Busy mornings are easier with a coffee subscription: choose your beans, pick a delivery schedule, and never run out of fresh coffee again.",
+      "reason": "Closely related — both pages cover 'coffee, beans, fresh' — but this page never links to it."
+    },
+    {
+      "source_url": "http://local/subscriptions.html",
+      "target_url": "http://local/",
+      "score": 0.273,
+      "anchor": "coffee",
+      "sentence": "A coffee subscription means fresh beans arrive at your door exactly when you need them.",
+      "reason": "Closely related — both pages cover 'coffee' — but this page never links to it."
+    },
+    {
+      "source_url": "http://local/",
+      "target_url": "http://local/brewing-guide.html",
+      "score": 0.259,
+      "anchor": "brewing guide",
+      "sentence": "Our brewing guide walks you through pour over, French press and cold brew step by step, so you can make cafe-quality coffee in your own kitchen.",
+      "reason": "Closely related — both pages cover 'brewing, coffee, guide' — but this page never links to it."
+    },
+    {
+      "source_url": "http://local/brewing-guide.html",
+      "target_url": "http://local/",
+      "score": 0.259,
+      "anchor": "Good coffee",
+      "sentence": "Good coffee starts with fresh beans and the right grind.",
+      "reason": "Closely related — both pages cover 'coffee' — but this page never links to it."
+    },
+    {
+      "source_url": "http://local/",
+      "target_url": "http://local/wholesale.html",
+      "score": 0.235,
+      "anchor": "brewing",
+      "sentence": "Our brewing guide walks you through pour over, French press and cold brew step by step, so you can make cafe-quality coffee in your own kitchen.",
+      "reason": "Orphan page — nothing links to it yet. Shares the topic 'coffee, acme' with this page."
+    },
+    {
+      "source_url": "http://local/brewing-guide.html",
+      "target_url": "http://local/wholesale.html",
+      "score": 0.191,
+      "anchor": "Good coffee",
+      "sentence": "Good coffee starts with fresh beans and the right grind.",
+      "reason": "Orphan page — nothing links to it yet. Shares the topic 'coffee' with this page."
+    },
+    {
+      "source_url": "http://local/beans.html",
+      "target_url": "http://local/subscriptions.html",
+      "score": 0.19,
+      "anchor": "green coffee",
+      "sentence": "Every bag starts as a green coffee bean from a farm we know by name.",
+      "reason": "Closely related — both pages cover 'coffee, beans' — but this page never links to it."
+    },
+    {
+      "source_url": "http://local/beans.html",
+      "target_url": "http://local/",
+      "score": 0.181,
+      "anchor": "Prefer coffee",
+      "sentence": "Prefer coffee without the caffeine?",
+      "reason": "Closely related — both pages cover 'coffee, small' — but this page never links to it."
+    },
+    {
+      "source_url": "http://local/subscriptions.html",
+      "target_url": "http://local/wholesale.html",
+      "score": 0.16,
+      "anchor": "Colombian beans",
+      "sentence": "Our most popular plan is the two-bag monthly subscription: one bag of Colombian beans for everyday drinking and one rotating single-origin for the weekends.",
+      "reason": "Orphan page — nothing links to it yet. Shares the topic 'coffee' with this page."
+    },
+    {
+      "source_url": "http://local/wholesale.html",
+      "target_url": "http://local/",
+      "score": 0.157,
+      "anchor": "coffee beans",
+      "sentence": "We supply wholesale coffee beans to cafes, restaurants and offices, with flexible volumes from 5kg a week upwards.",
+      "reason": "Closely related — both pages cover 'coffee' — but this page never links to it."
+    },
+    {
+      "source_url": "http://local/beans.html",
+      "target_url": "http://local/wholesale.html",
+      "score": 0.152,
+      "anchor": "green coffee",
+      "sentence": "Every bag starts as a green coffee bean from a farm we know by name.",
+      "reason": "Orphan page — nothing links to it yet. Shares the topic 'coffee' with this page."
+    },
+    {
+      "source_url": "http://local/about.html",
+      "target_url": "http://local/",
+      "score": 0.145,
+      "anchor": "Coffee Roasters",
+      "sentence": "Acme Coffee Roasters started in a garage in 2016 with a second-hand roaster and a stubborn belief: coffee should taste of where it grew.",
+      "reason": "Closely related — both pages cover 'coffee, acme, roasters' — but this page never links to it."
+    },
+    {
+      "source_url": "http://local/wholesale.html",
+      "target_url": "http://local/brewing-guide.html",
+      "score": 0.127,
+      "anchor": "coffee beans",
+      "sentence": "We supply wholesale coffee beans to cafes, restaurants and offices, with flexible volumes from 5kg a week upwards.",
+      "reason": "Closely related — both pages cover 'brewing, coffee, beans' — but this page never links to it."
+    },
+    {
+      "source_url": "http://local/wholesale.html",
+      "target_url": "http://local/subscriptions.html",
+      "score": 0.107,
+      "anchor": "coffee beans",
+      "sentence": "We supply wholesale coffee beans to cafes, restaurants and offices, with flexible volumes from 5kg a week upwards.",
+      "reason": "Closely related — both pages cover 'coffee, beans, fresh' — but this page never links to it."
+    },
+    {
+      "source_url": "http://local/about.html",
+      "target_url": "http://local/beans.html",
+      "score": 0.083,
+      "anchor": "Acme Coffee",
+      "sentence": "Acme Coffee Roasters started in a garage in 2016 with a second-hand roaster and a stubborn belief: coffee should taste of where it grew.",
+      "reason": "Closely related — both pages cover 'coffee' — but this page never links to it."
+    }
+  ]
+}
